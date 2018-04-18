@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 
 
 class Nav extends Component {
   render() {
     return (
+
     <div className="headerWrapper">
       <div className="navBar">
         <ul>
-          <li>My Account</li>
-          <li>Calendars</li>
-          <li>Events Near Me</li>
-          <li>Log Out</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/Favorites">Favorites</Link>
+          </li>
+          <li>
+            <Link to="/">Log Out</Link>
+          </li>
         </ul>
       </div>
-      <div>
-        <img src="" alt="Logo"/>
-      </div>
-      <div>
-        <img src="" alt="User Icon"/>
-      </div>
+
     </div>
     );
   }
